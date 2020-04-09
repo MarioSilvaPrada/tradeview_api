@@ -46,6 +46,11 @@ module.exports = {
         test: /\.(png|svg|jpg|gif|jpeg|ttf|otf|eot)$/,
         use: [ 'file-loader' ],
       },
+      {
+        test: /\.tsx?$/,
+        use: 'ts-loader',
+        exclude: /node_modules/,
+      },
     ],
   },
   devServer: {
