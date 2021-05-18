@@ -1,7 +1,7 @@
-import React from 'react';
+import React, { FC } from 'react';
 import * as S from './style';
 
-const App = () => (
+const App: FC = () => (
   <S.Container>
     <h1>Home</h1>
   </S.Container>
