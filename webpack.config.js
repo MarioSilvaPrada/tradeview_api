@@ -60,7 +60,7 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: 'src/index.html', //source html
+      template: 'src/public/index.html', //source html
     }),
     new webpack.DefinePlugin({
       'process.env.NODE_ENV': JSON.stringify(
@@ -71,4 +71,5 @@ module.exports = {
       path: './.env',
     }),
   ],
+  node: { fs: 'empty', net: 'empty', tls: 'empty' },
 };
