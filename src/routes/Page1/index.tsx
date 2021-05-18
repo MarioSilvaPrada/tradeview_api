@@ -1,5 +1,5 @@
 import React from 'react';
-import * as S from './Page.styled';
+import * as S from './style';
 
 const Page1 = () => (
   <S.Wrapper>
